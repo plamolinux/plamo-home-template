@@ -28,10 +28,10 @@
 ;; 見た目
 ;; 
 
-;;; メニューバーを日本語にします
-(setq menu-coding-system 'euc-japan)
-(if (equal (substring (concat (getenv "LANG") "__") 0 2) "ja")
-    (load "menu-tree"))
+;;; メニューバーを日本語にします (emacs 24.3 以上では動かない)
+;(setq menu-coding-system 'euc-japan)
+;(if (equal (substring (concat (getenv "LANG") "__") 0 2) "ja")
+;    (load "menu-tree"))
 
 ;;; Window システムで起動した場合
 (if window-system
